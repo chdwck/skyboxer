@@ -122,12 +122,12 @@ func main() {
 	pixelSizeY := imgConfig.Height / 3
 
 	bounds := []Bound{
-		{X: pixelSizeX, Y: 0, Name: "topcenter"},
-		{X: 0, Y: pixelSizeY, Name: "centerleft"},
-		{X: pixelSizeX, Y: pixelSizeY, Name: "centercenter"},
-		{X: pixelSizeX, Y: pixelSizeY * 2, Name: "bottomcenter"},
-		{X: pixelSizeX * 2, Y: pixelSizeY, Name: "centerright"},
-		{X: pixelSizeX * 3, Y: pixelSizeY, Name: "centerrightright"},
+		{X: pixelSizeX, Y: 0, Name: "posY"},
+		{X: 0, Y: pixelSizeY, Name: "negX"},
+		{X: pixelSizeX, Y: pixelSizeY, Name: "negZ"},
+		{X: pixelSizeX, Y: pixelSizeY * 2, Name: "negY"},
+		{X: pixelSizeX * 2, Y: pixelSizeY, Name: "posX"},
+		{X: pixelSizeX * 3, Y: pixelSizeY, Name: "posZ"},
 	}
 
 	for _, bound := range bounds {
